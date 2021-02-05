@@ -1,0 +1,90 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    // background-color: white;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+
+        .mj-logo,
+        .nav-ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            filter: drop-shadow(2px 2px 3px black);
+            font-family: 'Anton', sans-serif;
+        }
+
+        .mj-logo {
+
+            width: 25%;
+
+
+            h1 {
+                color: whitesmoke;
+                font-size: 3.5rem;
+            }
+
+        }
+
+
+        .nav-ul {
+
+            width: 50%;
+
+
+            li {
+                list-style: none;
+                margin: 0 20px;
+
+
+
+                a {
+                    position: relative;
+                    display: block;
+                    padding: 5px 20px;
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    color: rgb(94, 94, 94);
+                    transition: .2s .1s ease-in-out;
+                    text-align: center;
+                    overflow: hidden;
+                    // background-color: red;
+
+                }
+
+                a:hover {
+
+                    color: white;
+
+                }
+
+                a::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 1px;
+                    left: -100%;
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgb(255, 255, 255);
+                    transition: .2s ease-in-out;
+                }
+
+                a:hover::after {
+                    left: 0
+                }
+            }
+        }
+    }
+}

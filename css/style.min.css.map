@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,AAAC,CACE,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,UAAU,CAAE,UAAU,CACzB,AAED,AAAA,IAAI,AAAC,CACD,SAAS,CAAE,IAAI,CAClB",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_main.scss",
+        "../sass/_navBar.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}

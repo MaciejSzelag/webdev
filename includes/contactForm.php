@@ -1,6 +1,4 @@
-
-
-    <?php
+<?php
  global $connection;
  $DBname="devms";
  include "Connection/mysqli_connect.php";
@@ -36,6 +34,9 @@ if(isset($_POST["submit"])){
 ?>
 </div>
 <div class="content">
+    <div class="page-txt-img bx">
+
+
         <div class="blue-sq bx">
             <div class="contact-form">
                 <form action="contact.php" method="POST">
@@ -57,6 +58,7 @@ if(isset($_POST["submit"])){
                 </form>
             </div>
         </div>
-   
-
+    </div>
+</div>
+<h1 class="h1_contact"><a href="mailto:contact@msweb.co.uk?subject=Maciej Szelag Webpage!">contact@msweb.co.uk</a></h1>
 <script src="js/alerts.js"></script>

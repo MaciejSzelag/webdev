@@ -7,7 +7,7 @@
             </p>
          
             <p>
-                <a href="mailto:szelag.maciej@gmail.com">szelag.maciej@gmail.com</a>
+                <a href="mailto:contact@msweb.co.uk ">contact@msweb.co.uk</a>
             </p>
         </div>
         <div class="f_box">
@@ -24,7 +24,11 @@
 
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"
+            integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+            
 <script src="js/main.js"></script>
+<script src="js/anim.js"></script>
 </body>
 
 </html>

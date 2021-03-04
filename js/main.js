@@ -51,7 +51,7 @@ window.addEventListener("scroll", () => {
     for (let i = 0; i < bx.length; i++) {
         // setTimeout(() => {
         
-        if (window.innerHeight >= 1300) {
+        if (window.innerHeight >= 1024) {
             if (scrollY >= bx[i].offsetTop - content.clientHeight-300) {
                 bx[i].classList.add("li-visible");
             }  else if (scrollY <= bx[i].offsetTop - content.clientHeight - 600) {

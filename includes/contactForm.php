@@ -34,10 +34,11 @@ if(isset($_POST["submit"])){
 ?>
 </div>
 <div class="content">
-    <div class="page-txt-img bx">
+    <div class="page-txt-img">
 
 
-        <div class="blue-sq bx">
+        <div class="blue-sq">
+       
             <div class="contact-form">
                 <form action="contact.php" method="POST">
                     <div class="input-wrap">
@@ -49,6 +50,7 @@ if(isset($_POST["submit"])){
                         <input class="input" type="email" name="questemail" placeholder="Enter email" required>
                     </div>
                     <div class="input-wrap">
+                    <label for="fmessege">Question:</label><br>
                         <textarea class="input textarea" type="text" name="textquestion"
                             placeholder="Enter your question" rows="10" cols="50" required></textarea>
                     </div>

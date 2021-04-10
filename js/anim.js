@@ -41,7 +41,12 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
             { value: -200, easing: 'easeInOutQuad', duration: 400 },
             { value: 0, easing: 'easeInOutQuad', duration: 700 }     
         ],
-        opacity: [0, 1],
+        opacity: [
+            { value: 0.4, easing: 'easeInOutQuad', duration: 400 },
+            { value: 1, easing: 'easeInOutQuad', duration: 700 },
+            { value: 0.4, easing: 'easeInOutQuad', duration: 400 },
+            { value: 1, easing: 'easeInOutQuad', duration: 700 }
+        ],
         color: [{value: "rgba(255,255,255,0.0)", easing: 'easeOutSine', duration: 50},
             { value: "rgba(0, 78, 179,0.4)", easing: 'easeOutSine', duration: 1200 },
             { value: "rgb(0, 206, 144)", easing: 'easeOutSine', duration: 100, delay: 1400 },
@@ -51,7 +56,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
         ],
         scale: [
             { value: 1.5, easing: 'easeInOutQuad', duration: 400},
-            { value: 1, easing: 'easeOutSine', duration: 700 },
+            { value: .7, easing: 'easeOutSine', duration: 700 },
             { value: 1.5, easing: 'easeInOutQuad', duration: 400},
             { value: 1, easing: 'easeOutSine', duration: 700 }
         ],

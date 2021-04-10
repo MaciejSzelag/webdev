@@ -1,0 +1,27 @@
+.log-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin-top: $menu_height;
+
+    .form-header,
+    .form-wrap {
+        width: 100%;
+    }
+
+    .form-header {
+
+        height: 20%;
+
+
+    }
+
+    .form-wrap {
+
+        height: 80%;
+    }
+
+}

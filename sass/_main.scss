@@ -98,9 +98,9 @@ html {
                 font-size: 10rem;
                 text-transform: uppercase;
                 text-align: center;
-                color: $blue;
+                color: rgb(238, 238, 238);
                 font-family: 'Kaushan Script', cursive;
-                text-shadow: 5px 5px 1px rgba(0, 66, 141, 0.267);
+                text-shadow: 5px 5px 10px rgb(0, 39, 82);
             }
 
             .letter_header {
@@ -1096,11 +1096,16 @@ html {
                 opacity: 1;
             }
 
+            .li-visible {
+                animation: none;
+
+            }
+
         }
     }
 }
 
-@media (max-width:800) {
+@media (max-width:800px) {
 
     .container {
 
@@ -1108,6 +1113,11 @@ html {
             .content {
                 .bx {
                     opacity: 1;
+                }
+
+                .li-visible {
+                    animation: none;
+
                 }
             }
         }

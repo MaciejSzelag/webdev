@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
  
     const bx = document.querySelectorAll(".bx")
     const content = document.querySelector(".content")
-  
+    console.log(bx)
  
         for (let i = 0; i < bx.length; i++) {
             if (window.innerHeight >= 1024) {

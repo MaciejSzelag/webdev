@@ -1,6 +1,7 @@
 <?php
  global $connection;
  $DBname="devms";
+//  $DBname="msweb"; nazwa bazy danych do mojej strony
  include "Connection/mysqli_connect.php";
 ?>
 
@@ -12,7 +13,7 @@ if(isset($_POST["submit"])){
     $quest_email = $_POST["questemail"];
     $quest_text_question = $_POST["textquestion"];
 
-
+//nazwa tabeli do kontact form
     $query = "INSERT INTO contactformquestions(questname, questemail,textquestion) VALUE ('$quest_name','$quest_email','$quest_text_question')";
     $result = mysqli_query($connection, $query);
 
@@ -50,7 +51,7 @@ if(isset($_POST["submit"])){
                         <input class="input" type="email" name="questemail" placeholder="Enter email" required>
                     </div>
                     <div class="input-wrap">
-                    <label for="fmessege">Question:</label><br>
+                    <label for="fmessege">Question</label><br>
                         <textarea class="input textarea" type="text" name="textquestion"
                             placeholder="Enter your question" rows="10" cols="50" required></textarea>
                     </div>

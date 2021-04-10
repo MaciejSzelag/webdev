@@ -5,17 +5,10 @@
        
         </div>
         <ul class="nav-ul nav-ul-media">
-            <?php 
-                $href_list = [
-                    "Home"=>"index.php",
-                    // "About"=>"about.php",
-                    "Contact"=>"contact.php"
-                ];
-                foreach($href_list as $title => $href){
-                    $li = "<li><a href='$href' class='a-hide'>$title</a></li>";
-                    echo $li;
-                }
-            ?>
+        <li><a href='index.php' class='a-hide'>Home</a></li> 
+        <li><a href='contact.php' class='a-hide'>Contact</a></li> 
+        <li><a href='login.php' class='a-hide'>Login</a></li> 
+           
         </ul>
         <div class="bars-container ">
             <div class="bar"></div>

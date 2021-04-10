@@ -114,9 +114,9 @@ html {
   font-size: 10rem;
   text-transform: uppercase;
   text-align: center;
-  color: #004eb3;
+  color: #eeeeee;
   font-family: 'Kaushan Script', cursive;
-  text-shadow: 5px 5px 1px rgba(0, 66, 141, 0.267);
+  text-shadow: 5px 5px 10px #002752;
 }
 
 .container .container-wrap .header .letter_header {
@@ -844,11 +844,19 @@ html {
   .container .container-wrap .bx {
     opacity: 1;
   }
+  .container .container-wrap .li-visible {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
-@media (max-width: 800) {
+@media (max-width: 800px) {
   .container .container-wrap .content .bx {
     opacity: 1;
+  }
+  .container .container-wrap .content .li-visible {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -1325,7 +1333,7 @@ html {
 
 .alert {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1352,9 +1360,9 @@ html {
 }
 
 .alert-success {
-  background-color: #c6ffc6;
-  border-color: green;
-  color: green;
+  background-color: rgba(0, 78, 179, 0.4);
+  border-color: #004eb3;
+  color: #004eb3;
 }
 
 .close-btn {
@@ -1371,8 +1379,14 @@ html {
 }
 
 .hide-alert {
-  -webkit-animation: hide-alert 3s linear 1 both;
-          animation: hide-alert 3s linear 1 both;
+  -webkit-animation: hide-alert 6s linear 1 both;
+          animation: hide-alert 6s linear 1 both;
+}
+
+@media (max-width: 800px) {
+  .alert {
+    width: 90%;
+  }
 }
 
 @-webkit-keyframes hide-alert {
@@ -1639,6 +1653,38 @@ html {
             transform: rotateX(0deg) translateX(0) skewX(0deg);
     opacity: 1;
   }
+}
+
+.log-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin-top: 6rem;
+}
+
+.log-wrap .form-header,
+.log-wrap .form-wrap {
+  width: 100%;
+}
+
+.log-wrap .form-header {
+  height: 20%;
+}
+
+.log-wrap .form-wrap {
+  height: 80%;
 }
 
 footer {

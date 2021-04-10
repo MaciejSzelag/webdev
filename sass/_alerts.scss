@@ -9,7 +9,7 @@
 
 .alert {
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -22,16 +22,17 @@
     z-index: 10;
 
 }
+
 .alert-warning {
-    background-color:  rgb(255, 208, 208);
+    background-color: rgb(255, 208, 208);
     border-color: rgb(128, 0, 0);
-    color:  rgb(128, 0, 0);
+    color: rgb(128, 0, 0);
 }
 
 .alert-success {
-    background-color: rgb(198, 255, 198);
-    border-color: green;
-    color: green;
+    background-color: $blue_op_2;
+    border-color: $blue;
+    color: $blue;
 }
 
 .close-btn {
@@ -51,7 +52,13 @@
 }
 
 .hide-alert {
-    animation: hide-alert 3s linear 1 both;
+    animation: hide-alert 6s linear 1 both;
+}
+
+@media(max-width:800px) {
+    .alert {
+        width: 90%;
+    }
 }
 
 @keyframes hide-alert {
